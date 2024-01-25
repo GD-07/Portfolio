@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Gaurav</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="navimg">
+                GAURAV
+            </div>
+            <div id="leftnavbar" >
+                <div class="leftnavbar"> 
+                    <a onclick="scrollToSection('about')" class="leftnavbar" >About</a>
+                </div>
+                <div class="leftnavbar"> 
+                    <a onclick="scrollToSection('courses')" class="leftnavbar" >Courses</a>
+                </div>
+                <div class="leftnavbar"> 
+                    <a onclick="scrollToSection('hobbies')" class="leftnavbar" >Hobbies</a>
+                </div>
+                <div class="leftnavbar"> 
+                    <a onclick="scrollToSection('Contactme')" class="leftnavbar" >Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div id="welcome">
+            <div id="welcome1">
+                <div>Hi!!!<br>I am Gaurav</div>
+            </div>
+            <div id="welcome2">1st year UG student</div>
+        </div>
+        <div id="about">
+            <div id="imgdiv"><img src="imgs/gd.jpeg" id="img"></div>
+                <div id="abttext">
+                    <div id="aboutme">About Me</div>
+                    <div id="abt">I am Gaurav,First year undergrade at IIT Bomabay pursuing electrical engineering<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequsi debitis ex explicabo numquam, quaerat natus nesciunt aut facere inventore recusandae sequi cum veritatis incidunt magnam non obcaecati consequuntur. Optio illo amet perspiciatis voluptate quia eos dolor ex temporibus ullam facilis, excepturi sit cumque.
+                </div>
+            </div>
+        </div>
+        <h4 id="coursesheading">COURSES</h4>
+        <div id="courses">
+            <div id="sem1">
+            <h3>1st sem</h3>
+            <p class="semp">1st sem we had 6 courses holding 31 credits in total</p>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>credits</th>
+                </tr>
+                <tr>
+                    <td>MA105</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>EE103</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>CS101</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>HS109</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>SOM101</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>PH117</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            </div>
+            <div id="sem2">
+            <div id="sem2hh">
+                <div id="sem2h"><h3> 2nd sem</h3></div>
+                <div id="currently">Currently running</div>
+            </div>
+            <p class="semp">2nd sem we have 5 courses holding 33 credits in total</p>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>credits</th>
+                </tr>
+                <tr>
+                    <td>MA110</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>MS101</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>PH110</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>EE114</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>CH117</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div id="hobbiesheading">Hobbies</div>
+        <div id="hobbies">
+            <div id="movies">
+                <a href="pages/movies.html" target="_blank"><img src="imgs/movies.jpeg" id="moviesimg"></a>
+                <div id="moviesh">movies</div>
+                <div id="moviestxt">
+                    "Movies are my escape, where stories unfold and emotions take center stage."
+                </div>
+            </div>
+            <div id="sports">
+                <a href="pages/sports.html" target="_blank"><img src="imgs/sports.png" id="sportsimg"></a>
+                <div id="sportsh">sports</div>
+                <div id="sportstxt">
+                    "In the realm of sports, every game is a story waiting to be written, and every victory or defeat is a chapter in the book of competition."
+                </div>
+            </div>
+            <div id="reading">
+                <a href="pages/reading.html" target="_blank"><img src="imgs/reading.png" id="sreadingimg"></a>
+                <div id="readingh">reading</div>
+                <div id="readingtxt">
+                    "Lost in the pages, I find adventures, wisdom, and a universe within each book, making reading not just a hobby but a journey of the mind."
+                </div>
+            </div>
+        </div>
+        <div id="contactmeheading">Contact Me</div>
+        <div id="Contactme">
+            <form>
+                <div id="row1"><label for="name" >Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Mobile:</label>
+                <input type="tel" id="email" name="email" required>
+                </div>
+                <div id="row2"><textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea></div>
+                <center><button id="submit" onclick="submit(name.value,email.value,message.value)">Submit</button></center>
+            </form>
+        </div>
+        <footer>
+            <div id="mailme"><a href="https://mail.google.com/mail/u/0/?fs=1&to=official07gd@gmail.com&su=SUBJECT&body=BODY&tf=cm" target="_blank"><img src="imgs/mailme.png" id="mailmeimg"></a></div>
+            <div id="socials"> 
+                <a href="https://facebook.com" target="_blank"><img src="imgs/facebook.png"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imgs/insta.png"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="imgs/linkedin.png"></a>
+                <a href="https://twitter.com" target="_blank"><img src="imgs/twitter.png"></a>
+            </div>
+        </footer>
+    </body>
+    
+</html>
