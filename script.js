@@ -1,16 +1,13 @@
+// Function to scroll to a particular secion.
+//     used in navbar 
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  function undercursor(element) {
-    element.classList.add('undercursor');
-  }
-  
-  function cursorleft(element) {
-    element.classList.remove('undercursor')
-  }
+
+// To record the message sent by user 
   class messages{
       constructor(name,mobile,message){
         this.name=name;
