@@ -1,42 +1,7 @@
+/* Importing the font `Baloo Paaji` to use it  */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Baloo Paaji', cursive;
-    margin-top:50px;
-    color: #fff;
-}
 
-#navimg{
-    font-size: 30px;
-    margin-left: 100px;
-    transition: font-size 0.3s;
-}
-#navimg:hover{
-    font-size: 40px;
-    cursor: none;
-}
-
-#leftnavbar{
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 200px;
-}
-
-#leftnavbar div{
-    padding-top: 4px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 25px;
-}
-#leftnavbar div:hover{
-    cursor:pointer;
-    color: #dbef23df;
-    transition: color 1s;
-}
-
-
-body {
+body{
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -44,9 +9,52 @@ body {
     line-height: 1.5;
     color: #212529;
     background-image: url(imgs/header.jpg);
-    background-size: cover;
+    background-size: cover; /* To avoid repetations of the background image and make the picture fully spread */
 }
 
+#navbar{
+    display: flex; /*To make the right and left parts of navbar appear in same line */
+    justify-content: space-between; /*To make the left and right parts appear on their respective extremes */
+    font-family: 'Baloo Paaji', cursive;
+    margin-top:50px; 
+    color: #fff;
+}
+
+/* To style the name written on the right(wrt screen) of navbar */
+#navimg{
+    font-size: 30px;
+    margin-left: 100px;
+    transition: font-size 0.3s; /* To make the transition when we hover the mouse over the name Gaurav in the navbar smooth */
+}
+
+/* To increase the font size and make the cursor disappear on hovering over the name Gaurav in navbar*/
+#navimg:hover{
+    font-size: 40px; 
+    cursor: none;
+}
+
+#leftnavbar{
+    display: flex;/*To make the divs appear in same line */
+    justify-content: space-evenly;
+    margin-right: 200px;
+}
+
+/* To make the divs differentiable */
+#leftnavbar div{
+    padding-top: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+/* To change color when we hover the mouse over the names of sections in navbar */
+#leftnavbar div:hover{
+    cursor:pointer;
+    color: #dbef23df;
+    transition: color 1s;
+}
+
+/* To style the text Hi!! I am Gaurav */
 #welcome1{
     margin-top: 150px;
     color: black;
@@ -56,6 +64,7 @@ body {
     font-size: 80px;
 }
 
+/* To style the text below Hi!! I am Gaurav */
 #welcome2{
     display: flex;
     justify-content: center;
@@ -63,32 +72,77 @@ body {
     font-size: 30px;
     font-family: "Open Sans", sans-serif;   
 }
+
+/*To not mix the intro with greetings and making appear the image nd about me in the same line*/
 #about{
     margin-top: 100px;
     display: flex;
 }
+
+/* To make the image in intro away from the corner  */
 #imgdiv{
     margin-left: 100px;
 }
+
+/* To make the picture border rounfd  */
 #img{
     border-radius: 10000px;
 }
+
+/* /Heading of the about me section  */
 #aboutme{
     font-family: 'Baloo Paaji', cursive;
     color: black;
     font-size: 50px;
-    transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s; 
 }
+
+/* Text in the intro  section  */
 #abttext{
     margin-left: 50px;
     margin-right: 100px;
 }
+
+/* The paragraph in the about me  */
 #abt{
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* TO make all the headings of sections look similar  */
+#coursesheading, #hobbiesheading,#contactmeheading{
+    font-family: 'Baloo Paaji', cursive;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+/* To highlight the headings on hover */
+#coursesheading:hover, #hobbiesheading:hover,#contactmeheading:hover,#aboutme:hover{
+    cursor: pointer;
+    color: blueviolet;
+    font-size: 300%;
+}
+
+/* To make the tables in course section appear in same line */
 #courses{
     display: flex;
+}
+
+/* To show grid like structure to properly relate the course with respective credits  */
+th,td{
+    padding: 10px;
+    border: #fff solid;
+}
+
+/* To highlight the block on hover  */
+th:hover ,td:hover{
+    background-color: #eea47fff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 #sem1{
@@ -97,25 +151,34 @@ body {
 
 #sem2{
     margin-left: 100px;
+}
 
+/* To keep the text of sem1 and sem2 closer to their headings  */
+.semp{
+    margin: 0;
 }
-th,td{
-    padding: 10px;
-    border: #fff solid;
-}
-th:hover ,td:hover{
+
+/* To highlight the text of sem1 and sem2 on hover  */
+.semp:hover{
     background-color: #eea47fff;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
 }
+
+/* A popup to tell that 2nd sem is the one which is currently running  */
 #currently{
-    visibility: hidden;
+    visibility: hidden; /*Popup hidden by this */
     opacity: 0;
     font-family: 'Baloo Paaji', cursive;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s; /* To make the transition smooth when the popup becomes visible */
 }
 
+/* To keep the poup adjacent to the title sem2  */
+#sem2hh{
+    display: flex;
+}
+
+/* To make the popup visible on hover  */
 #sem2h:hover + #currently{
     visibility: visible;
     opacity: 1;
@@ -125,44 +188,26 @@ th:hover ,td:hover{
     margin-bottom: 25px;
 }
 
-#coursesheading, #hobbiesheading,#contactmeheading{
-    font-family: 'Baloo Paaji', cursive;
-    font-size: 40px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    transition: color 0.3s, font-size 0.3s;
-}
-#coursesheading:hover, #hobbiesheading:hover,#contactmeheading:hover,#aboutme:hover{
-    cursor: pointer;
-    color: blueviolet;
-    font-size: 300%;
-}
-#sem2hh{
-    display: flex;
-
-}
-.semp{
-    margin: 0;
-}
-.semp:hover{
-    background-color: #eea47fff;
-    border-radius: 15px;
-    padding: 10px;
-}
+/* To make the hobbies appear adjacently  */
 #hobbies{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* To fix the appearances to and make the hobbies sections look symmetrical  */
 #sports,#reading,#movies{
     margin: 20px;
     width: 300px;
-} 
+}
+
+/* To fix the hobbies images size to make the 3 hobbies section look symmetrical  */
 #hobbies img{
     width: 300px;
     height: 300px;
     border-radius: 45px;
 }
+
+/* To center the headings of each hobby  */
 #sportsh,#readingh,#moviesh {
     display: flex;
     justify-content: center;
@@ -170,19 +215,38 @@ th:hover ,td:hover{
     color: black;
     font-size: 40px;
 }
-#msg,#name,#email{
-    display: flex;
-    justify-content: center;
-}
+
+/* To center the input boxes for the message section  */
 #row1 , #row2{
     display: flex;
     justify-content: center;
 }
+
+/* To align the ends of textarea with the upper row in form  */
 textarea{
     width: 471px;
     height:225px;
     margin-top: 2px;
 }
+
+/* To style the submit button  */
+#submit{
+    font-family: 'Baloo Paaji', cursive;
+    border-radius: 12px;
+    background-color: aqua;
+    margin-top: 10px;
+    transition: width 10s, height 0.3s;
+}
+
+/* To highlight the submit button on hover  */
+#submit:hover{
+   width:70px;
+   height: 35px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+/* To make the footer look good and keep the mail and socials on the extremes  */
 footer{
     margin-top: 40px;
     border-top: lightgray solid 0.5px;
@@ -193,16 +257,22 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+/* To style the mail me button  */
 #mailmeimg{
     width: 95px;
     height: 35px;
     border-radius: 20px;
     transition: width 0.3s, height 0.3s;
 }
+
+/* To highlight th button on  hover  */
 #mailmeimg:hover{
     width: 100px;
     height: 40px;
 }
+
+/* To style the socials buttons  */
 #socials img{
     width: 30px;
     height: 30px;
@@ -210,21 +280,9 @@ footer{
     padding: 7px;
     transition: width 0.3s, height 0.3s;
 }
+
+/* To highlight th buttons on  hover  */
 #socials img:hover{
     width: 40px;
     height: 40px;
 }
-#submit{
-    font-family: 'Baloo Paaji', cursive;
-    border-radius: 12px;
-    background-color: aqua;
-    margin-top: 10px;
-    transition: width 10s, height 0.3s;
-}
-#submit:hover{
-   width:70px;
-   height: 35px;
-   border-radius: 20px;
-   cursor: pointer;
-}
-
