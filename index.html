@@ -1,16 +1,19 @@
 <html>
     <head>
-        <title>Gaurav</title>
+        <title>Gaurav</title> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div id="navbar">
-            <div id="navimg">
+        <!-- Navbar to navigate the website -->
+        <div id="navbar"> 
+            <div id="navimg"> 
                 GAURAV
             </div>
-            <div id="leftnavbar" >
+            <!-- Left part of navbar (with respect to the screen).
+                It contains divs for each button which leads to it's corresponding section -->
+            <div id="leftnavbar" > 
                 <div class="leftnavbar"> 
                     <a onclick="scrollToSection('about')" class="leftnavbar" >About</a>
                 </div>
@@ -25,22 +28,28 @@
                 </div>
             </div>
         </div>
+        <!-- Greeting -->
         <div id="welcome">
             <div id="welcome1">
                 <div>Hi!!!<br>I am Gaurav</div>
             </div>
             <div id="welcome2">1st year UG student</div>
         </div>
+        <!-- Brief intro  -->
         <div id="about">
+            <!-- My profile image  -->
             <div id="imgdiv"><img src="imgs/gd.jpeg" id="img"></div>
-                <div id="abttext">
-                    <div id="aboutme">About Me</div>
-                    <div id="abt">I am Gaurav,First year undergrade at IIT Bomabay pursuing electrical engineering<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequsi debitis ex explicabo numquam, quaerat natus nesciunt aut facere inventore recusandae sequi cum veritatis incidunt magnam non obcaecati consequuntur. Optio illo amet perspiciatis voluptate quia eos dolor ex temporibus ullam facilis, excepturi sit cumque.
-                </div>
+            <!-- About me  -->
+            <div id="abttext">
+                <div id="aboutme">About Me</div>
+                <div id="abt">I am Gaurav,First year undergrade at IIT Bomabay pursuing electrical engineering<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequsi debitis ex explicabo numquam, quaerat natus nesciunt aut facere inventore recusandae sequi cum veritatis incidunt magnam non obcaecati consequuntur. Optio illo amet perspiciatis voluptate quia eos dolor ex temporibus ullam facilis, excepturi sit cumque.
+            </div>
             </div>
         </div>
         <h4 id="coursesheading">COURSES</h4>
+        <!-- Section for courses along with their corresponding credits  -->
         <div id="courses">
+            <!-- Courses from sem1 -->
             <div id="sem1">
             <h3>1st sem</h3>
             <p class="semp">1st sem we had 6 courses holding 31 credits in total</p>
@@ -72,13 +81,14 @@
                 <tr>
                     <td>PH117</td>
                     <td>3</td>
-                </tr>
+                </tr> 
             </table>
             </div>
+            <!-- Courses from sem2 -->
             <div id="sem2">
             <div id="sem2hh">
                 <div id="sem2h"><h3> 2nd sem</h3></div>
-                <div id="currently">Currently running</div>
+                <div id="currently">Currently running</div> <!--A popup to show that sem2 is the one that is currently running-->
             </div>
             <p class="semp">2nd sem we have 5 courses holding 33 credits in total</p>
             <table>
@@ -110,6 +120,7 @@
             </div>
         </div>
         <div id="hobbiesheading">Hobbies</div>
+        <!-- Hobbies with a seperate page for each one and linked with their corresppnding pictures-->
         <div id="hobbies">
             <div id="movies">
                 <a href="pages/movies.html" target="_blank"><img src="imgs/movies.jpeg" id="moviesimg"></a>
@@ -133,6 +144,7 @@
                 </div>
             </div>
         </div>
+        <!-- Section to leave a message for me  -->
         <div id="contactmeheading">Contact Me</div>
         <div id="Contactme">
             <form>
@@ -142,10 +154,13 @@
                 <input type="tel" id="email" name="email" required>
                 </div>
                 <div id="row2"><textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea></div>
+                <!-- Submit button to record the message  -->
                 <center><button id="submit" onclick="submit(name.value,email.value,message.value)">Submit</button></center>
             </form>
         </div>
+        <!-- Footer of the website with links to my social handles  -->
         <footer>
+            <!-- A button which leads directly to the gmail compose section to send email to my mail directly in one click  -->
             <div id="mailme"><a href="https://mail.google.com/mail/u/0/?fs=1&to=official07gd@gmail.com&su=SUBJECT&body=BODY&tf=cm" target="_blank"><img src="imgs/mailme.png" id="mailmeimg"></a></div>
             <div id="socials"> 
                 <a href="https://facebook.com" target="_blank"><img src="imgs/facebook.png"></a>
@@ -155,5 +170,4 @@
             </div>
         </footer>
     </body>
-    
 </html>
